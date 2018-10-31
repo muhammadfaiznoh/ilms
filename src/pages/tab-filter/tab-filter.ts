@@ -23,7 +23,7 @@ export class TabFilterPage {
 
   // close modal
   closeModal() {
-    // this.nav.pop();
-    // this.viewCtrl.dismiss(true);
+    this.nav.pop();
+    this.viewCtrl.dismiss(true);
   }
 }

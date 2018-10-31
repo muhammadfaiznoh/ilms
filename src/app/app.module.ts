@@ -4,6 +4,8 @@ import {MyApp} from './app.component';
 import {BrowserModule} from '@angular/platform-browser';
 import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
+import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
+import { NgxQRCodeModule } from 'ngx-qrcode2';
 
 // import services
 import {CategoryService} from '../services/category-service';
@@ -39,6 +41,7 @@ import {TabAttributePage} from '../pages/tab-attribute/tab-attribute';
 import {TabFilterPage} from '../pages/tab-filter/tab-filter';
 import {WelcomePage} from '../pages/welcome/welcome';
 import {WishListPage} from '../pages/wish-list/wish-list';
+import { QrscannerPage } from '../pages/qrscanner/qrscanner';
 // end import pages
 
 @NgModule({
@@ -65,11 +68,13 @@ import {WishListPage} from '../pages/wish-list/wish-list';
     TabAttributePage,
     TabFilterPage,
     WelcomePage,
-    WishListPage
+    WishListPage,
+    QrscannerPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    NgxQRCodeModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -95,7 +100,8 @@ import {WishListPage} from '../pages/wish-list/wish-list';
     TabAttributePage,
     TabFilterPage,
     WelcomePage,
-    WishListPage
+    WishListPage,
+    QrscannerPage
   ],
   providers: [
     StatusBar,
@@ -106,7 +112,8 @@ import {WishListPage} from '../pages/wish-list/wish-list';
     StoreService,
     CartService,
     OrderService,
-    NewsService
+    NewsService,
+    QRScanner
     /* import services */
   ]
 })

@@ -7,6 +7,7 @@ import {CategoryPage} from "../category/category";
 import {ItemPage} from "../item/item";
 import {SearchPage} from "../search/search";
 import {CartPage} from "../cart/cart";
+import { QrscannerPage } from '../qrscanner/qrscanner';
 
 
 /*
@@ -23,13 +24,23 @@ export class HomePage {
   // list slides for slider
   public slides = [
     {
-      src: 'assets/img/slide_1.jpg'
+      src: 'assets/img/news1.jpg'
     },
     {
-      src: 'assets/img/slide_2.jpg'
+      src: 'assets/img/news2.jpg'
     },
     {
-      src: 'assets/img/slide_3.jpg'
+      src: 'assets/img/news3.jpg'
+    },
+    {
+      src: 'assets/img/news4.jpg'
+    },
+    {
+      src: 'assets/img/news5.jpg'
+    }
+    ,
+    {
+      src: 'assets/img/news6.jpg'
     }
   ];
 
@@ -63,6 +74,10 @@ export class HomePage {
   // go to search page
   goToSearch() {
     this.nav.push(SearchPage);
+  }
+
+  goToQrScanner() {
+    this.nav.push(QrscannerPage);
   }
 
   // view cart

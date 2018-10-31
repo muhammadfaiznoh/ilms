@@ -18,10 +18,10 @@ $background-color: #fff;
 // It's highly recommended to change the default colors
 // to match your app's branding. Ionic uses a Sass map of
 // colors so you can add, rename and remove colors as needed.
-// The "primary" color is the only required color in the map.
+// The "primary" color is the only required color in the map. #DC4437
 
 $colors: (
-  primary: #DC4437,
+  primary: #3B5999,
   secondary: #36ACE2,
   danger: #f53d3d,
   light: #FFFFFF,
@@ -50,3 +50,10 @@ $colors: (
 
 $ionicons-font-path: "../assets/fonts";
 @import "ionic.ionicons";
+
+ion-app.cameraView, ion-app.cameraView ion-content, ion-app.cameraView .nav-decor {
+  background: transparent none !important; 
+  .tabbar.show-tabbar{
+    opacity: 0;
+  }
+}

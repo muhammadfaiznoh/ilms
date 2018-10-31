@@ -15,7 +15,7 @@
       <button ion-button (click)="goToSearch()">
         <ion-icon name="search"></ion-icon>
       </button>
-      <button ion-button>
+      <button ion-button (click)="goToQrScanner()">
         <ion-icon name="qr-scanner"></ion-icon>
       </button>
       <button ion-button (click)="goToCart()">
@@ -29,7 +29,7 @@
 
 <ion-content class=" common-bg">
   <!-- slider on top-->
-  <ion-slides pager autoplay="2000">
+  <ion-slides pager autoplay="6000" loop="true">
 
     <ion-slide *ngFor="let slide of slides">
       <img src="{{ slide.src }}" alt="">
@@ -60,14 +60,14 @@
         <ion-card>
           <div>Flash Deals</div>
           <ion-badge color="primary">00:00:01</ion-badge>
-          <img src="assets/img/items/item_1.jpg" alt="">
+          <img src="assets/img/items/MarineHull.jpg" alt="">
         </ion-card>
       </ion-col>
       <ion-col text-center>
         <ion-card>
           <div>Super Deals</div>
           <ion-badge color="primary">Up to 90% off</ion-badge>
-          <img src="assets/img/items/item_2.jpg" alt="">
+          <img src="assets/img/items/PrimalLeadership.jpg" alt="">
         </ion-card>
       </ion-col>
     </ion-row>
@@ -81,7 +81,7 @@
       <ion-col *ngFor="let item of items" col-6 class="product" (click)="viewItem(item.id)">
         <div class="card light-bg">
           <img src="{{ item.thumb }}" alt="{{ item.name }}">
-          <div class="price" text-center>{{ item.price | currency:'USD':true }}</div>
+          <div class="price" text-center>{{ item.price | currency:'RM':true }}</div>
         </div>
       </ion-col>
     </ion-row>

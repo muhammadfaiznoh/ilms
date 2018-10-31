@@ -15,8 +15,9 @@ import {ChangePasswordPage} from "../change-password/change-password";
   templateUrl: 'my-account.html'
 })
 export class MyAccountPage {
-
+  createdCode = null;
   constructor(public nav: NavController, public userService: UserService) {
+    this.createdCode = "ID123456";
   }
 
   // go to changing password page

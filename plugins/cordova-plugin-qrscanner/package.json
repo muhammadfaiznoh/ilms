@@ -1,41 +1,19 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "cordova-plugin-qrscanner",
-        "scope": null,
-        "escapedName": "cordova-plugin-qrscanner",
-        "name": "cordova-plugin-qrscanner",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/Users/rsaimac/Desktop/ilms/project/ilms"
-    ]
-  ],
-  "_from": "cordova-plugin-qrscanner@latest",
+  "_from": "cordova-plugin-qrscanner",
   "_id": "cordova-plugin-qrscanner@2.6.0",
-  "_inCache": true,
+  "_inBundle": false,
+  "_integrity": "sha512-bgy+cG0HdpuSW/JxHDFQYaO46Ma8nYTjwduhhWhMmuYeljozqQ4RJcwhJQaxHnjuDi3XDz+rHkszOEOhlSG23w==",
   "_location": "/cordova-plugin-qrscanner",
-  "_nodeVersion": "8.11.1",
-  "_npmOperationalInternal": {
-    "host": "s3://npm-registry-packages",
-    "tmp": "tmp/cordova-plugin-qrscanner_2.6.0_1526582566581_0.9492114405335059"
-  },
-  "_npmUser": {
-    "name": "jasondreyzehner",
-    "email": "jason@dreyzehner.com"
-  },
-  "_npmVersion": "5.6.0",
   "_phantomChildren": {},
   "_requested": {
+    "type": "tag",
+    "registry": true,
     "raw": "cordova-plugin-qrscanner",
-    "scope": null,
-    "escapedName": "cordova-plugin-qrscanner",
     "name": "cordova-plugin-qrscanner",
+    "escapedName": "cordova-plugin-qrscanner",
     "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
+    "saveSpec": null,
+    "fetchSpec": "latest"
   },
   "_requiredBy": [
     "#USER",
@@ -43,15 +21,15 @@
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-qrscanner/-/cordova-plugin-qrscanner-2.6.0.tgz",
   "_shasum": "e981be29d024cb37c11e28bbee87ba2544a29e2a",
-  "_shrinkwrap": null,
   "_spec": "cordova-plugin-qrscanner",
-  "_where": "/Users/rsaimac/Desktop/ilms/project/ilms",
+  "_where": "C:\\Users\\MG\\Documents\\work\\qrcode",
   "author": {
     "name": "Jason Dreyzehner"
   },
   "bugs": {
     "url": "https://github.com/bitpay/cordova-plugin-qrscanner/issues"
   },
+  "bundleDependencies": false,
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -70,6 +48,7 @@
     "qrcode-reader": "^1.0.4",
     "webrtc-adapter": "^3.1.4"
   },
+  "deprecated": false,
   "description": "Fast, energy-efficient, highly-configurable QR code scanner.",
   "devDependencies": {
     "conventional-changelog-cli": "^1.2.0",
@@ -86,16 +65,6 @@
     "validate-commit-msg": "^2.6.1",
     "webpack": "^2.7.0"
   },
-  "directories": {},
-  "dist": {
-    "integrity": "sha512-bgy+cG0HdpuSW/JxHDFQYaO46Ma8nYTjwduhhWhMmuYeljozqQ4RJcwhJQaxHnjuDi3XDz+rHkszOEOhlSG23w==",
-    "shasum": "e981be29d024cb37c11e28bbee87ba2544a29e2a",
-    "tarball": "https://registry.npmjs.org/cordova-plugin-qrscanner/-/cordova-plugin-qrscanner-2.6.0.tgz",
-    "fileCount": 51,
-    "unpackedSize": 3989892,
-    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJa/c0oCRA9TVsSAnZWagAAjlwP/ijB2lz3KSDIYsMadG1d\nbJ3EuS33BY3lHACl3vatZVWYw8rspScnYLNtodNCcy+wFbeCP7IiOv8SrACX\nuT6rlnZA4yn71pE0rX17A/AAnY0P7RAmrsfHuLJD8SaBO8lubANaYu7r0itK\nkAAowoSQZDMqCQ1hZVgOoH2+UEZF7MffDTvJmqthCXgxJBvv+P/AsPjAQbAy\nKUSqlbhZ4/IOupYS82e3IUQQauwR4NTQCmx1RVz7CiNYTwx54dyK1hsLaTkg\nbWcrfXAhjm+XApY3Nw+6eAFX0N8rHRNMjHHCh/kDU3+27d3WYTcVb//aK0AP\nPcVHg2/6Arosehoh3xR+AdhMBXQAlQET0XMoEklC3A9lWSeuUE4PkYM2MKn7\nClkEN845cU8uA0i+epcODPvEf55zhHD/Y57wPJ7Po8s/gOj1qnZROnOX89KM\nIMu3Xkbz82ATM5chtgetxbz2tRfZX7GLO5Fb9Z0pN7y/3K1xLEtwEFB7EShB\nkSb7Z6nykCmCAAT12q6ZwP7GupB+o4Lra3AnRsKukR2Fhjgxl5JdEOWKc3IX\neoTd+2/bDSYVs9vjDY1LTfZBLS+mDO5ATmvJkXW4E1HUguOWAQHmcuvN3io2\n9HVMDTFUKc2cs7bzJBj96USk2gnmXO22TF3990Cj2I13BBY5+oQvaC6W1BN5\nHJS+\r\n=eOC2\r\n-----END PGP SIGNATURE-----\r\n"
-  },
-  "gitHead": "d54dc34b8c3e62c74ee6c3f4f24210d1bd92beb2",
   "homepage": "https://github.com/bitpay/cordova-plugin-qrscanner",
   "keywords": [
     "cordova",
@@ -114,15 +83,7 @@
   ],
   "license": "MIT",
   "main": "dist/cordova-plugin-qrscanner-lib.min.js",
-  "maintainers": [
-    {
-      "name": "jasondreyzehner",
-      "email": "jason@dreyzehner.com"
-    }
-  ],
   "name": "cordova-plugin-qrscanner",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bitpay/cordova-plugin-qrscanner.git"

@@ -22,7 +22,7 @@
     <ion-item class="no-border">
       <ion-label>Ship to</ion-label>
       <ion-select>
-        <ion-option value="">Singapore</ion-option>
+        <ion-option value="">Malaysia</ion-option>
         <ion-option value="vn">Vietnam</ion-option>
       </ion-select>
     </ion-item>
@@ -30,9 +30,9 @@
 
   <div class="card" margin-top *ngFor="let seller of cart.sellers; let sellerIndex = index"
        [hidden]="!seller.items.length">
-    <div class="card-header" padding>
+    <!-- <div class="card-header" padding>
       Seller: {{ seller.name }}
-    </div>
+    </div> -->
 
     <ion-list class="list-full-border" no-margin>
       <ion-item class="product" *ngFor="let item of seller.items; let i = index">
@@ -42,11 +42,11 @@
         <!--item's information-->
         <div>
           <div text-wrap>{{ item.name }}</div>
-          <div class="text-sm">
+          <!-- <div class="text-sm">
             <span ion-text color="gray">{{ item.options.join(',') }}</span>
-          </div>
+          </div> -->
           <div padding-bottom>
-            <span class="pull-right">{{ item.price | currency:'USD':true }}</span>
+            <span class="pull-right">{{ item.price | currency:'RM':true }}</span>
             <div class="clear"></div>
           </div>
           <div>
@@ -73,17 +73,17 @@
     <div class="card-footer" padding>
       <div>
         <span class="pull-left" ion-text color="gray">Subtotal</span>
-        <span class="pull-right" ion-text color="gray">{{ seller.subtotal | currency:'USD':true }}</span>
+        <span class="pull-right" ion-text color="gray">{{ seller.subtotal | currency:'RM':true }}</span>
         <div class="clear"></div>
       </div>
       <div>
         <span class="pull-left" ion-text color="gray">Shipping</span>
-        <span class="pull-right" ion-text color="gray">{{ seller.shipping | currency:'USD':true }}</span>
+        <span class="pull-right" ion-text color="gray">{{ seller.shipping | currency:'RM':true }}</span>
         <div class="clear"></div>
       </div>
       <div>
         <span class="pull-left" ion-text color="gray">Total</span>
-        <span class="pull-right bold" ion-text color="danger">{{ seller.total | currency:'USD':true }}</span>
+        <span class="pull-right bold" ion-text color="danger">{{ seller.total | currency:'RM':true }}</span>
         <div class="clear"></div>
       </div>
     </div>
@@ -94,12 +94,12 @@
     <div class="card-footer" padding>
       <div>
         <span class="pull-left" ion-text color="gray">Subtotal</span>
-        <span class="pull-right" ion-text color="gray">{{ cart.subtotal | currency:'USD':true }}</span>
+        <span class="pull-right" ion-text color="gray">{{ cart.subtotal | currency:'RM':true }}</span>
         <div class="clear"></div>
       </div>
       <div>
         <span class="pull-left" ion-text color="gray">Shipping</span>
-        <span class="pull-right" ion-text color="gray">{{ cart.shipping | currency:'USD':true }}</span>
+        <span class="pull-right" ion-text color="gray">{{ cart.shipping | currency:'RM':true }}</span>
         <div class="clear"></div>
       </div>
     </div>
@@ -111,7 +111,7 @@
   <ion-title>
     <span ion-text color="gray">Total</span>
     <br/>
-    <span class="bold" ion-text color="danger">{{ cart.total | currency:'USD':true }}</span>
+    <span class="bold" ion-text color="danger">{{ cart.total | currency:'RM':true }}</span>
   </ion-title>
   <ion-buttons end>
     <button ion-button (click)="buy()" color="danger">

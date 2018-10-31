@@ -3,19 +3,19 @@ export let CATEGORIES = [
     id: 1,
     name: "Books",
     thumb: "assets/img/categories/books.png",
-    item_count: 923
+    item_count: 4
   },
   {
     id: 2,
     name: "T-Shirt",
     thumb: "assets/img/categories/tshirt.png",
-    item_count: 810
+    item_count: 1
   },
   {
     id: 3,
-    name: "Stickers",
-    thumb: "assets/img/categories/sticker.png",
-    item_count: 102
+    name: "E-Books",
+    thumb: "assets/img/categories/eBook.jpg",
+    item_count: 2
   },
   // {
   //   id: 4,

@@ -1,8 +1,7 @@
 {
-  "name": "ionic2_ecommerce",
+  "name": "qrcode",
   "integrations": {
     "cordova": {}
   },
-  "type": "ionic-angular",
-  "pro_id": "ecbf6bd1"
+  "type": "ionic-angular"
 }
